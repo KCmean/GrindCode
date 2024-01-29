@@ -9,7 +9,7 @@
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
-        map<ListNode*, bool> visited;
+        unordered_map<ListNode*, bool> visited;
         
         int index = 0;
         while(head){
