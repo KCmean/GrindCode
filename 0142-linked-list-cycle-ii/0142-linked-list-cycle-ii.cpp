@@ -11,7 +11,6 @@ public:
     ListNode *detectCycle(ListNode *head) {
         unordered_map<ListNode*, bool> visited;
         
-        int index = 0;
         while(head){
             if(visited[head] == true){
                 return head;
@@ -19,7 +18,6 @@ public:
 
             visited[head] = true;
             head = head -> next;
-            index++;
         }
 
         return NULL;
