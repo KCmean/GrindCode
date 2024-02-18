@@ -1,7 +1,7 @@
 class Solution {
 public:
     int firstUniqChar(string s) {
-        map<char,int> omap;
+        // map<char,int> omap;
         
         
         vector<int> count(26);
